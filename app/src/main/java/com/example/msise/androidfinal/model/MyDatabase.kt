@@ -12,7 +12,7 @@ import android.content.Context
 abstract class MyDatabase : RoomDatabase() {
 
     abstract fun contactDao(): ContactDao
-    abstract fun ContactGroupDao(): ContactGroupDao
+    abstract fun contactGroupDao(): ContactGroupDao
 
 
     companion object {

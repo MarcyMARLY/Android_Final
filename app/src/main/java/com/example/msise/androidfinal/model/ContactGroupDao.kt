@@ -8,7 +8,7 @@ import android.arch.persistence.room.Query
 interface ContactGroupDao {
 
     @Insert
-    fun insertContactGroup()
+    fun insertContactGroup(group: ContactGroup)
 
     @Query("SELECT * FROM ContactGroup")
     fun getGroups(): List<ContactGroup>

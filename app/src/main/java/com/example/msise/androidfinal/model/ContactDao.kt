@@ -7,7 +7,7 @@ import android.arch.persistence.room.Query
 @Dao
 interface ContactDao {
     @Insert
-    fun insertContact()
+    fun insertContact(contact: Contact)
 
     @Query("SELECT * FROM Contact")
     fun getContacts(): List<Contact>
